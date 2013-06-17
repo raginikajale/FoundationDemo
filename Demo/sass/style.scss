@@ -1,0 +1,41 @@
+@mixin effect($ht,$wd)
+{
+  background-color:#000000;
+  height:$ht;
+  width:$wd;
+  margin-top:10px;
+  margin-left:10px;
+  margin-right:10px;
+  
+}
+.large-12
+{
+  @include effect(50px,800px);
+}
+.large-3
+{
+  @include effect(300px,100px);
+}
+.box
+{
+  @include effect(100px,100px);
+ 
+}
+.box1
+{
+  @include effect(100px,100px);
+  background-color:#ffffff;
+
+}
+.blue
+{
+  @include effect(20px,200px);
+  background-color:#0000FF;
+  position:absolute;
+}
+.yellow
+{
+   @include effect(5px,100px);
+   background-color:#FF0000;
+   position:absolute;
+}

@@ -4,21 +4,29 @@
   <link rel="stylesheet" href="demo_files/docs.css">
   <link rel="stylesheet" href="demo_files/normalize.css">
   <link rel="stylesheet" href="demo_files/foundation.css">
-   <script src="demo_files/foundation_009.js"></script>
-  <script src="demo_files/foundation_004.js"></script>
-  <script src="demo_files/foundation.js"></script>
-  <script src="demo_files/foundation_010.js"></script>
-  <script src="demo_files/foundation_012.js"></script>
-  <script src="demo_files/foundation_002.js"></script>
-  <script src="demo_files/foundation_014.js"></script>
-  <script src="demo_files/foundation_015.js"></script>
-  <script src="demo_files/foundation_013.js"></script>
-  <script src="demo_files/foundation_007.js"></script>
-  <script src="demo_files/foundation_005.js"></script>
-  <script src="demo_files/foundation_011.js"></script>
-  <script src="demo_files/foundation_006.js"></script>
-  <script src="demo_files/foundation_008.js"></script>
-  <script src="demo_files/foundation_003.js"></script>
+   <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  <script src="javascripts/foundation/foundation.js"></script>
+  <script src="javascripts/foundation/foundation.alerts.js"></script>
+  <script src="javascripts/foundation/foundation.clearing.js"></script>
+  <script src="javascripts/foundation/foundation.cookie.js"></script>
+  <script src="javascripts/foundation/foundation.dropdown.js"></script>
+  <script src="javascripts/foundation/foundation.forms.js"></script>
+  <script src="javascripts/foundation/foundation.joyride.js"></script>
+  <script src="javascripts/foundation/foundation.magellan.js"></script>
+  <script src="javascripts/foundation/foundation.orbit.js"></script>
+  <script src="javascripts/foundation/foundation.placeholder.js"></script>
+  <script src="javascripts/foundation/foundation.reveal.js"></script>
+  <script src="javascripts/foundation/foundation.section.js"></script>
+  <script src="javascripts/foundation/foundation.tooltips.js"></script>
+  <script src="javascripts/foundation/foundation.topbar.js"></script>
+  <script src="javascripts/foundation/foundation.interchange.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
 </head>
 <body class="antialiased">
    	
@@ -64,7 +72,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="row">
+      
         <div class="large-9 push-3 columns">
           <h2>Getting Started</h2> 
 
@@ -94,16 +102,434 @@
            </p> 
            <a href="#" class="tiny secondary button">Migration Guide</a>
            <hr>
-           <p>
+           
              <h3>What comes with Foundation?</h3>
            </p>
            <h5 class="subheader">
             We've got you covered when it comes to useful features and we've made it easy to take out what you don't need. Here's what you'll get when you create a project using our Sass &nbsp; version or the default CSS version:
            </h5>
+           <p>
+           <div class="row">
+             <div class="large-4 columns">
+                <h5><a href="#">The Grid</a></h5>
+                <p>
+                  Our grid works on almost any device and has support for nesting, source ordering, offsets and device presentation. It almost makes creating layouts too easy!
+                </p>
+             </div> 
+             <div class="large-4 columns">
+              <h5><a href="#">Typography</a></h5>
+              <p>
+                Our type is based on a golden ratio modular scale that creates meaningful relationships for the copy on the page. It's easily updated using Scss or our CSS customizer.
+              </p>
+             </div> 
+             <div class="large-4 columns">
+              <h5><a href="#">Buttons</a></h5>
+              <p>
+                Buttons are a core interactive element of the Web. We've included styles for creating simple marketing CTAs to complex application toolbars.
+              </p>
+             </div> 
+           </div>
+           <div class="row">
+             <div class="large-4 columns">
+              <h5><a href="#">Navigation</a></h5>
+              <p>
+                People have to get around. Navigation styles in Foundation include a complex top bar that supports 3-level dropdown navigation for simple bars, sidebars and subnav pills.
+              </p>
+             </div>
+             <div class="large-4 columns">
+              <h5><a href="#">Forms</a></h5>
+              <p>
+                Built with the Foundation Grid, you can create simple or complicated forms quickly and easily— validation states, custom select, radio buttons and more.
+              </p>
+             </div>
+             <div class="large-4 columns">
+              <h5><a href="#">UI Elements</a></h5>
+              <p>
+                We've also included lots of useful elements like visibility classes (to hide or show things based on screen size or orientation), labels, alerts, tooltips, panels and a lot more.
+              </p>
+             </div>
+           </div>
+           <div class="row">
+             <div class="large-4 columns">
+              <h5><a href="#">Section</a></h5>
+              <p>
+                Whether it's entire pages or simple tabbed content, Foundation's tabs get the job done. Not only stylish, but interactive out of the box.
+              </p>
+             </div>
+             <div class="large-4 columns">
+              <h5><a href="#">Orbit</a></h5>
+              <p>
+                A powerful image or content slider that works responsively and includes tons of useful options, such as timers, paddles, bullet thumbs and more.
+              </p>
+             </div>
+             <div class="large-4 columns">
+              <h5><a href="#">Reveal</a></h5>
+              <p>
+                You can easily call modals without writing any JS, even spawn subsequent modals cleanly on the same page. Reveal works across devices.
+              </p>
+             </div>
+           </div>
+           <div class="row">
+             <div class="large-4 columns">
+              <h5><a href="#">Clearing</a></h5>
+              <p>
+                Show off your images in style with our easy to use gallery plugin. It's built with simple unordered lists that can be styled to your hearts content.
+              </p>
+             </div>
+             <div class="large-4 columns">
+              <h5><a href="#">Magellan</a></h5>
+              <p>
+                A flexible sticky navigation that knows where you are on the page. You just tell it what to recognize and set it off.
+              </p>
+             </div>
+             <div class="large-4 columns">
+              <h5><a href="#">Joyride</a></h5>
+              <p>
+                This plugin lets you give users a tour of your site or app. Joyride is easy to customize using CSS or our Scss variables.
+              </p>
+             </div>
+           </div>
+           <div class="row">
+             <div class="large-4 columns">
+              <h5><a href="#">Tooltips</a></h5>
+              <p>
+                Tooltips lets you add quick hover or tap tooltips to elements.
+              </p>
+             </div>
+             <div class="large-4 columns">
+              <h5><a href="#">Dropedown</a></h5>
+              <p>
+                We've made a dropdown plugin that makes it easy to attach a popover dropdown to any element on the page.
+              </p>
+             </div>
+             <div class="large-4 columns">
+              <h5><a href="#">Interchange</a></h5>
+              <p>
+                This plugin let's you load up the appropriate size image based on media queries that you define.
+              </p>
+             </div>
+           </div>
+           <hr>
+           <h3>How is a project structured?</h3>
+           <h5 class="subheader">
+            We follow common patterns for directory structure that are logical and easily maintained. Below is an explanation of each file you'll get when you create a project using our gem or download via our 
+            <a href="#">customizer</a>.
+           </h5>
+           <div class="row">
+            <div class="large-4 columns">
+              <h5>css</h5>
+              <p>
+                Includes <code>foundation.css</code> and <code>foundation.min.css</code> so you can choose which to use.You'll also see <code>normalize.css</code>, which we use for resets. Add another stylesheet on top of Foundation to override defaults.
+              </p>
+            </div>
+            <div class="large-4 columns">
+              <h5>js</h5>
+              <p>
+                All of our plugins and the necessary JavaScript to make Foundation work properly.<strong>All JS is initiated by default.</strong>
+              </p>
+            </div>
+            <div class="large-4 columns">
+              <h5>img</h5>
+              <p>
+                This directory actually comes empty in Foundation 4! We no longer have any images included in the core of Foundation.
+              </p>
+            </div>
+           </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <h5>index.html</h5>
+              <p>
+                A sample structure for page content, giving you something to use as a basic structural template for the rest of the pages in your project.
+              </p>
+            </div>
+            <div class="large-4 columns">
+              <h5>humans.txt</h5>
+              <p>
+                A way to tell the world about the people that worked on the sites you build, giving them kudos they deserve.
+              </p>
+            </div>
+            <div class="large-4 columns">
+              <h5>robots.txt</h5>
+              <p>
+                Give instructions to web robots so search engines know what to do when they crawl your site for content.
+              </p>
+            </div>
+           </div>
+           <div class="panel">
+             <h6 class="subheader">
+               <strong>Using the Gem?</strong> You'll see a couple extra pieces in your project upon creation. These are:
+             </h6>
+             <dl>
+              <dt>scss/</dt>
+              <dd>
+                Your main style folder is named <strong>scss/</strong> and contains <code>app.scss</code> (which has the foundation gem import and commented portions you can pick and choose). Override the Foundation styles within your <code>app.scss</code> file. You can see the compiled CSS in your stylesheets directory after you manually <strong>compile</strong> or <strong>watch</strong>. This directory also includes<code>_settings.scss</code>, which is used to control variables that help easily style Foundation. You'll also notice that the directory names are slightly different. Compass defaults to "stylesheets", "javascripts", and "image".
+              </dd>
+              <dt>config.rb</dt>
+              <dd>
+                This file is used by <a href="#">Compass</a> to compile your project. Here you can control the output style of your CSS, the structure of your directories and other useful settings.
+              </dd>
+             </dl>
+           </div>
+           <hr>
+           <h3>HTML Page Markup</h3>
+           <h6 class="subheader">Our markup structure is straight forward and gives you the flexibility you need to create to your hearts desires. Here's an example page that includes the basics:</h6>
+           <div class="html">
+            <div class="CodeRay">
+             <div class="code">
+              <pre>
+      <span class="doctype">&lt;!DOCTYPE html&gt;</span>
+      <span class="comment">&lt;!--[if IE 8]&gt;&lt;html class="no-js lt-ie9" lang="en"&gt; &lt;![endif]--&gt;</span>
+      <span class="comment">&lt;!--[if gt IE 8]&gt;&lt;!--&gt;
+      </span><span class="tag">&lt;html</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">no-js</span><span class="delimiter">"</span></span><span class="attribute-name">lang</span>=<span class="string"><span class="delimiter">"</span><span class="content">en</span><span class="delimiter">"</span></span><span class="tag">&gt;</span> <span class="comment">&lt;!--&lt;![endif]--&gt;</span>
+
+      <span class="tag">&lt;head&gt;</span>
+      <span class="tag">&lt;meta</span> <span class="attribute-name">charset</span>=<span class="string"><span class="delimiter">"</span><span class="content">utf-8</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+      <span class="tag">&lt;meta</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">viewport</span><span class="delimiter">"</span></span> <span class="attribute-name">content</span>=<span class="string"><span class="delimiter">"</span><span class="content">width=device-width</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+      <span class="tag">&lt;title&gt;</span>Foundation 4<span class="tag">&lt;/title&gt;</span>
+
+      <span class="comment">&lt;!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. --&gt;</span>
+      <span class="tag">&lt;link</span> <span class="attribute-name">rel</span>=<span class="string"><span class="delimiter">"</span><span class="content">stylesheet</span><span class="delimiter">"</span></span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">"</span><span class="content">css/normalize.css</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+      <span class="tag">&lt;link</span> <span class="attribute-name">rel</span>=<span class="string"><span class="delimiter">"</span><span class="content">stylesheet</span><span class="delimiter">"</span></span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">"</span><span class="content">css/foundation.css</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+      <span class="comment">&lt;!-- If you are using the gem version, you need this only --&gt;</span>
+      <span class="tag">&lt;link</span> <span class="attribute-name">rel</span>=<span class="string"><span class="delimiter">"</span><span class="content">stylesheet</span><span class="delimiter">"</span></span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">"</span><span class="content">css/app.css</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+
+      <span class="tag">&lt;script</span> <span class="attribute-name">src</span>=< span class="string"><span class="delimiter">"</span><span class="content">js/vendor/custom.modernizr.js</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span>
+
+      <span class="tag">&lt;/head&gt;</span>
+      <span class="tag">&lt;body&gt;</span>
+
+      <span class="comment">&lt;!-- body content here --&gt;</span>
+
+      <span class="tag">&lt;script&gt;</span>
+      <span class="inline">  document.write(<span class="string"><span class="delimiter">'</span><span class="content">&lt;script src=</span><span class="delimiter">'</span></span> +
+      (<span class="string"><span class="delimiter">'</span><span class="content">__proto__</span><span class="delimiter">'</span></span> <span class="keyword">in</span> {} ? <span class="string"><span class="delimiter">'</span><span class="content">js/vendor/zepto</span><span class="delimiter">'</span></span> : <span class="string"><span class="delimiter">'</span><span class="content">js/vendor/jquery</span><span class="delimiter">'</span></span>) +
+      <span class="string"><span class="delimiter">'</span><span class="content">.js&gt;&lt;</span><span class="content">\/</span><span class="content">script&gt;</span><span class="delimiter">'</span></span>)</span>
+      <span class="tag">&lt;/script&gt;</span>
+      <span class="tag">&lt;script</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">js/foundation/foundation.js</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span>
+      <span class="tag">&lt;script</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">js/foundation/foundation.alerts.js</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span>
+      <span class="tag">&lt;script</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">js/foundation/foundation.clearing.js</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span>
+      <span class="tag">&lt;script</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">js/foundation/foundation.cookie.js</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span>
+      <span class="tag">&lt;script</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">js/foundation/foundation.dropdown.js</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span>
+      <span class="tag">&lt;script</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">js/foundation/foundation.forms.js</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span>
+      <span class="tag">&lt;script</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">js/foundation/foundation.joyride.js</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span>
+      <span class="tag">&lt;script</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">js/foundation/foundation.magellan.js</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span>
+      <span class="tag">&lt;script</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">js/foundation/foundation.orbit.js</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span>
+      <span class="tag">&lt;script</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">js/foundation/foundation.placeholder.js</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span>
+      <span class="tag">&lt;script</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">js/foundation/foundation.reveal.js</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span>
+      <span class="tag">&lt;script</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">js/foundation/foundation.section.js</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span>
+      <span class="tag">&lt;script</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">js/foundation/foundation.tooltips.js</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span>
+      <span class="tag">&lt;script</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">js/foundation/foundation.topbar.js</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span>
+      <span class="tag">&lt;script</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">js/foundation/foundation.interchange.js</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span>
+      <span class="tag">&lt;script&gt;</span>
+      <span class="tag">&lt;/script&gt;</span>
+      <span class="tag">&lt;/body&gt;</span>
+      <span class="tag">&lt;/html&gt;</span>
+            </pre>
+          </div>
+         </div>
         </div>
-        <div class="large-3 pull-9 columns">ragini</div>
-      </div>
+        <div class="row">
+          <div class="large-4 columns">
+            <dl>
+             <dt><h5>Doctype & Head</h5></dt>
+              <dd>We use the HTML doctype declaration to tell the browser what to expect. From there we've used a <a href="#">technique by Paul Irish</a> that attaches classes to the HTML for IE. After that, we set the character set to UTF-8.</dd>
+              <dt>Meta Viewport tag</dt>
+              <dd> This is used to make sure smaller devices use the device width as the viewport width.</dd>
+              <dt>Title Tag</dt>
+              <dd>This one is pretty self-explanatory. You're setting the name of the current page with this value.</dd>
+            </dl>
+          </div>
+          <div class="large-4 columns">
+            <dl>
+              <dt><h5>CSS & Modernizr</h5></dt>
+              <dd>The default CSS download includes everything you need to get going, including necessary styles and our custom Modernizr script.</dd>
+              <dt>CSS</dt>
+              <dd>We include <code>foundation.min.css</code> and <code>foundation.css</code> with a default CSS download. The difference here is whether or not you want minified code or not (link whichever you want, but not both).</dd>
+            </dl>
+          </div>
+          <div class="large-4 columns">
+            <dl>
+              <dt>Modernizr</dt>
+              <dd>We use this to give us the HTML5 Shiv, touch classes and JS media queries that help us control Foundation.</dd>
+              <dt><h5>Javascripts</h5></dt>
+              <dd>Our JS is linked up right before the closing body tag and includes all necessary plugins and initializers to hit the ground running.</dd>
+            </dl>
+          </div>
+        </div>
+        <hr>
+        <div class="panel">
+          <h3>Get going!</h3>
+          <p><h5>Now that you understand the gist of what Foundation is and how it works, it's time to start a project! We've got two different ways for you to build projects with Foundation, a Compass Gem using Scss or a with plain CSS.</h5></p>
+          <ul class="inline-list">
+            <li><a class="button" href="#">Using the Gem</a></li>
+            <li><a  class="secondary button" href="#">Quickstart with CSS</a></li>
+          </ul>
+        </div>
+        </div>
+        <div class="large-3 pull-9 columns">
+          <div class="section-container accordion" data-section="accordion">
+            <section class="section ">
+              <p class="title"><a href="#">Using Foundation</a></p>
+              <div class="content" data>
+                <ul class="side-nav">
+                  <li><a href="#">Get Started</a></li>
+                  <li><a href="#">Javascript</a></li>
+                  <li><a href="#">Sass</a></li>
+                  <li><a href="#">Rails</a></li>
+                  <li><a href="#">Media Queries</a></li>
+                  <li><a href="#">Visibility Classes</a></li>
+                  <li><a href="#">Right-to-left Support</a></li>
+                </ul>
+              </div>
+            </section>
+            
+            <section class="section">
+              <p class="title"><a href="#">Grid</a></p>
+              <div class="content">
+                <ul class="side-nav">
+                  <li><a href="#">Grid</a></li>
+                  <li><a href="#">Block Grid</a></li>
+                </ul>
+              </div>
+            </section>
+            
+            <section class="section">
+              <p class="title"><a href="#">Navigation</a></p>
+              <div class="content" >
+                <ul class="side-nav">
+                  <li><a href="#">Pagination</a></li>
+                  <li><a href="#">Side Nav</a></li>
+                  <li><a href="#">Sub Nav</a></li>
+                  <li><a href="#">Top Bar</a></li>
+                  <li><a href="#">Breadcrumbs</a></li>
+                </ul>
+              </div>
+            </section>
+            
+            <section class="section">
+              <p class="title"><a href="#">Bottons</a></p>
+              <div class="content" >
+                <ul class="side-nav">
+                  <li><a href="#">Bottons</a></li>
+                  <li><a href="#">Bottons Group</a></li>
+                  <li><a href="#">Dropdown Bottons</a></li>
+                  <li><a href="#">Split Bottons</a></li>
+                </ul>
+              </div>
+            </section>
+            
+            <section class="section">
+              <p class="title"><a href="#">Forms</a></p>
+              <div class="content" >
+                <ul class="side-nav">
+                  <li><a href="#">Forms</a></li>
+                  <li><a href="#">Custom Forms</a></li>
+                  <li><a href="#">Switch</a></li>
+                </ul>
+              </div>
+            </section>
+            
+            <section class="section">
+              <p class="title"><a href="#">Typography</a></p>
+              <div class="content">
+                <ul class="side-nav">
+                  <li><a href="#">Type</a></li>
+                  <li><a href="#">Inline List</a></li>
+                  <li><a href="#">Lables</a></li>
+                  <li><a href="#">Keystrokes</a></li>
+                </ul>
+              </div>
+            </section>
+            
+            <section class="section">
+              <p class="title"><a href="#">CSS Components</a></p>
+              <div class="content">
+                <ul class="side-nav">
+                  <li><a href="#">Global Styles</a></li>
+                  <li><a href="#">Alert Boxes</a></li>
+                  <li><a href="#">Panels</a></li>
+                  <li><a href="#">Pricing Table</a></li>
+                  <li><a href="#">Progress Bar</a></li>
+                  <li><a href="#">Tables</a></li>
+                  <li><a href="#">Thumbnails</a></li>
+                  <li><a href="#">Flex Video</a></li>
+                  <li class="divider"></a></li>
+                  <li><a href="#"><em>Kitchen Sink</em></a></li>
+                </ul>
+              </div>
+            </section>
+            
+            <section class="">
+              <p class="title" data-section-title><a href="#">Javascript</a></p>
+              <div class="content" data-section-content>
+                <ul class="side-nav">
+                  <li><a href="#">Clearing</a></li>
+                  <li><a href="#">Dropdown</a></li>
+                  <li><a href="#">Interchange</a></li>
+                  <li><a href="#">Joyride</a></li>
+                  <li><a href="#">Magellan</a></li>
+                  <li><a href="#">Orbit</a></li>
+                  <li><a href="#">Reveal</a></li>
+                  <li><a href="#">Section</a></li>
+                  <li><a href="#">Tooltips</a></li>
+                </ul>
+              </div>
+            </section>
+            
+            <section class="section">
+              <p class="title"><a href="#">FAQ</a></p>
+            </section>
+            
+            <section class="section">
+              <p class="title"><a href="#">Support</a></p>
+            </section>
+          </div>
+          <div class="section-container accordion" data-section="accordion">
+  <section>
+    <p class="title" data-section-title><a href="#">Section 1</a></p>
+    <div class="content" data-section-content>
+      <p>Content of section 1.</p>
     </div>
-      
+  </section>
+  <section>
+    <p class="title" data-section-title><a href="#">Section 2</a></p>
+    <div class="content" data-section-content>
+      <p>Content of section 2.</p>
+    </div>
+  </section>
+</div>
+
+
+
+
+        <div>
+          <a class="button expand" href="#">Download Foundation 4</a>
+        </div>
+        <div class="panel">
+          <h6>Awesome product jobs:</h6>
+          
+            <p><a href="#">Product Design(Web or mobile)</a><br>
+            Causes in San Francisco
+            </p>
+            <p><a href="#">Product/Visual DEsigner</a><br>
+              One Kings Lane in San Francisco, CA
+            </p>
+        </div>
+        </div>        
+      </div>
+      <footer class="row full-width">
+       <div class="large-5 columns"> 
+        <h6><strong>Made by Zurb</strong></h6>
+        <p>Foundation is made by <a href="#">ZURB</a>, a product design company in Campbell, California. We've put more than 14 years of experience building web products, services and websites into this framework. 
+        <a href="#">Foundation Info and Goodies →</a></p>
+       </div>
+       <div class="large-4 columns"><h6><strong>Using Foundation?
+       </strong></h6>
+       <p>Let us know how you're using Foundation and we might feature you as an example!<a href="#">Get in touch →</a></p>
+     </div>
+     <div><h6><strong>Need some help?</strong></h6>
+      <p>For answers or help visit the <a href="#">Support page</a>.</p>
+    </div>
+      </footer>
       </body>	
  </html> 

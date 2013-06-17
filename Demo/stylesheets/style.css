@@ -1,0 +1,64 @@
+/* line 12, ../sass/style.scss */
+.large-12 {
+  background-color: #000000;
+  height: 50px;
+  width: 800px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 16, ../sass/style.scss */
+.large-3 {
+  background-color: #000000;
+  height: 300px;
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 20, ../sass/style.scss */
+.box {
+  background-color: #000000;
+  height: 100px;
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 25, ../sass/style.scss */
+.box1 {
+  background-color: #000000;
+  height: 100px;
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #ffffff;
+}
+
+/* line 31, ../sass/style.scss */
+.blue {
+  background-color: #000000;
+  height: 20px;
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #0000FF;
+  position: absolute;
+}
+
+/* line 37, ../sass/style.scss */
+.yellow {
+  background-color: #000000;
+  height: 5px;
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #FF0000;
+  position: absolute;
+}
